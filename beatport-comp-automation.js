@@ -51,7 +51,7 @@
 	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix "),
 	randno = greetings[Math.floor( Math.random() * greetings.length )];
 
-	var message = randno + artist + "! you got my vote "+$(".vote").children(".counter").children(".number").text();+"! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. "+url_to_share+" find me on soundcloud if you want to get in touch. I'd love to download your track actually";
+	var message = randno + artist + "! you got my vote #"+parseInt($(".vote").children(".counter").children(".number").text(), 10)+1;+"! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. "+url_to_share+" find me on soundcloud if you want to get in touch. I'd love to download your track actually";
 
 	setTimeout(function () { $("#comment").val(message); }, 500); 
 	setTimeout(function () { $(".vote").children(".button").click(); }, 600); 
