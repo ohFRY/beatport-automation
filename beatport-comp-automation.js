@@ -49,9 +49,15 @@
 	var artist = $(".span6").children(".padBox").children(".txtxx.txtWhite").children("a").text();
 
 	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix "),
-	randno = greetings[Math.floor( Math.random() * greetings.length )];
+	greeting = greetings[Math.floor( Math.random() * greetings.length )];
 
-	var message = randno + artist + "! you got my vote #"+(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+"! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. "+url_to_share+" find me on soundcloud if you want to get in touch. I'd love to download your track actually";
+	var invites = new Array("! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. ","! Listen to my track if you have the time, I'd like to read your feedback: ", "! Would you mind gimme some feedback on mine? check it out here: "),
+	invite = invites[Math.floor( Math.random() * invites.length )];
+
+	var ends = new Array(" Find me on soundcloud if you want to get in touch. I'd love to download your track.", " Get in touch on soundcloud, I'd like to DL your track", " Poke me on soundcloud. Do you have a DL link?"),
+	end = ends[Math.floor( Math.random() * ends.length )];
+
+	var message = greeting + artist + "! you got my vote #"+(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+url_to_share+end;
 
 	setTimeout(function () { $("#comment").val(message); }, 500); 
 	setTimeout(function () { $(".vote").children(".button").click(); }, 600); 
