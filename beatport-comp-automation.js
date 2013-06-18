@@ -48,13 +48,13 @@
 
 	var artist = $(".span6").children(".padBox").children(".txtxx.txtWhite").children("a").text();
 
-	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix "),
+	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix ", "Nice track ", "Love the way to made this "),
 	greeting = greetings[Math.floor( Math.random() * greetings.length )];
 
 	var invites = new Array("! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. ","! Listen to my track if you have the time, I'd like to read your feedback: ", "! Would you mind gimme some feedback on mine? check it out here: "),
 	invite = invites[Math.floor( Math.random() * invites.length )];
 
-	var ends = new Array(" Find me on soundcloud if you want to get in touch. I'd love to download your track.", " Get in touch on soundcloud, I'd like to DL your track", " Poke me on soundcloud. Do you have a DL link?"),
+	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?"),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
 	var message = greeting + artist + "! you got my vote #"+(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+url_to_share+end;
