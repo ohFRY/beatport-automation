@@ -48,19 +48,22 @@
 
 	var artist = $(".span6").children(".padBox").children(".txtxx.txtWhite").children("a").text();
 
-	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix ", "Nice track ", "Love the way to made this "),
+	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix ", "Nice track ", "Love the way to made this ", "You have good skills ", "This is a really cool track ", "This remix has something original. Nice work ", "Oh waow... this is good "),
 	greeting = greetings[Math.floor( Math.random() * greetings.length )];
 
-	var invites = new Array("! Have a listen to my track if you have 1min, I would love to hear your expertise feedback. ","! Listen to my track if you have the time, I'd like to read your feedback: ", "! Would you mind gimme some feedback on mine? check it out here: "),
+	var invites = new Array("! Have a listen to my remix if you have 1 minute, I would love to hear your expertise feedback. ","! Listen to my track if you have the time, I'd like to read your feedback: ", "! Would you mind gimme some feedback on mine? check it out here: ", ". Please have a listen to mine. Feel free to vote: ", "! What do you think of my Fedde Le Grand Remix? ", "!!! I would be grateful if you give me your feedback on mine (and I would love you if you vote), check it out here: "),
 	invite = invites[Math.floor( Math.random() * invites.length )];
 
-	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?"),
+	var votes = new Array("! you got my vote #", ". Here my vote #", ". You deserve this vote #", "! You totally get my vote number ", "! Just added my vote :-) Now you have ", ". Just voted for you, now you have "),
+	vote = votes[Math.floor( Math.random() * votes.length )];
+
+	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win", " See you around"),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
-	var message = greeting + artist + "! you got my vote #"+(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+url_to_share+end;
+	var message = greeting + artist + vote +(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+url_to_share+end;
 
 	setTimeout(function () { $("#comment").val(message); }, 500); 
-	setTimeout(function () { $(".vote").children(".button").click(); }, 600); 
-	setTimeout(function () { $("#commentform").children(".btn").click(); }, 700);
+	setTimeout(function () { $(".vote").children(".button").click(); }, 700); 
+	setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
 
 })();
