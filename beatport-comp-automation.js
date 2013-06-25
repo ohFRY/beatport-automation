@@ -60,7 +60,7 @@
 	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win", " See you around"),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
-	var message = greeting + artist + vote +(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+url_to_share+end;
+	var message = greeting + artist + vote +(parseInt($(".vote").children(".counter").children(".number").text(), 10)+1)+invite+ " Vote back? " +url_to_share+end;
 
 	setTimeout(function () { $("#comment").val(message); }, 500); 
 	setTimeout(function () { $(".vote").children(".button").click(); }, 700); 
