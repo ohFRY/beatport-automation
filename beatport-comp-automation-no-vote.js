@@ -52,7 +52,7 @@
 
 	var artist = $(".span6").children(".padBox").children(".txtxx.txtWhite").children("a").text();
 
-	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "Great remix ", "Nice track ", "Love the way to made this ", "You have good skills ", "This is a really cool track ", "This remix has something original. Nice work ", "Oh waow... this is good "),
+	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this ", "This is magic ","Great remix ", "Nice track ", "Love the way to made this ", "You have good skills ", "This is a really cool track ", "This remix has something original. Nice work ", "Oh waow... this is good "),
 	greeting = greetings[Math.floor( Math.random() * greetings.length )];
 
 	var invites = new Array("! Have a listen to my "+name_of_track+" remix if you have 1 minute, I would love to hear your feedback. If you think I did well, please vote back ","! Listen to my "+name_of_track+" remix if you have the time, I'd like to read your feedback and maybe vote back? ", "! Would you mind gimme some feedback on my "+name_of_track+" remix? and maybe vote back? Check it out here: ", ". Please have a listen to my "+name_of_track+" remix. Feel free to vote back: ", "! What do you think of my "+name_of_track+" Remix? vote back? ", "!!! I would be grateful if you give me your feedback on mine (and I would love you if you vote), check it out here: "),
@@ -67,7 +67,7 @@
 	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win", " See you around"),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
-	var message = greeting + artist + vote + number_of_votes + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
+	var message = greeting + artist + no_vote + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
 
 	setTimeout(function () { $("#comment").val(message); }, 500); 
 	setTimeout(function () { $(".vote").children(".button").click(); }, 700); 
