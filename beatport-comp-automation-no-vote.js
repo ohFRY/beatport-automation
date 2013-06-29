@@ -69,8 +69,8 @@
 
 	var message = greeting + artist + no_vote + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
 
-	setTimeout(function () { $("#comment").val(message); }, 500); 
-	setTimeout(function () { $(".vote").children(".button").click(); }, 700); 
+	setTimeout(function () { $("#comment").append(message); }, 500); 
+
 	setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
 
 })();
