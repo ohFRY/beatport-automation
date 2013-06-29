@@ -64,12 +64,12 @@
 	var no_votes = new Array("! I will come back to vote for you when the vote will start", ". Definitely coming back in few days to make my vote for you", ". Hope you will win this", "! You deserve to win, I'll come back to vote", "! I wish I could vote now, I'll come back to vote", ". I'll come back when the votes start to support you with my vote", ". For sure I will come back to vote for this", ". This Definitely catched my attention, I'll come back to vote for your track"),
 	no_vote = no_votes[Math.floor( Math.random() * no_votes.length )];
 
-	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win", " See you around"),
+	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win", " See you around", "", "", ""),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
 	var message = greeting + artist + no_vote + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
 
-	setTimeout(function () { $("#comment").append(message); }, 500); 
+	setTimeout(function () { $("#comment").val($("#comment").val()+" \n\r\n\r "+message); }, 500); 
 
 	setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
 
