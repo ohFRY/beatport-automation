@@ -67,7 +67,7 @@
 	var ends = new Array(" Find me on soundcloud if you want to get in touch.", " Get in touch on soundcloud.", " Poke me on soundcloud.", " See you on soundcloud?", " See you.", " Good luck.", " Wish you luck.", " Have a good day.", " Bye.", " Peace.", " Hope you win something", " See you around", "", "", ""),
 	end = ends[Math.floor( Math.random() * ends.length )];
 
-	var message = greeting + artist + no_vote + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
+	var message = greeting + artist + no_vote + ". Only few hours until the end of my remix contest, please support me" + invite + "\n\r\n\r" + url_to_share + "\n\r\n\r" + end;
 
 	setTimeout(function () { $("#comment").val($("#comment").val()+" \n\r\n\r "+message); }, 500); 
 
