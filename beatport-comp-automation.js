@@ -57,7 +57,7 @@
 
 	//var invites = new Array("! Have a listen to my "+name_of_track+" track if you have 1 minute, I would love to hear your feedback. If you think I did well, please vote back ","! Listen to my "+name_of_track+" track if you have the time, I'd like to read your feedback and maybe vote back? ", "! Would you mind gimme some feedback on my "+name_of_track+" track? and maybe vote back? Check it out here: ", ". Please have a listen to my "+name_of_track+" track. Feel free to vote back: ", "! What do you think of my "+name_of_track+" track? vote back? ", "!!! I would be grateful if you give me your feedback on mine (and I would love you if you vote), check it out here: "),
 	//var invite = invites[Math.floor( Math.random() * invites.length )];
-	var invite = ". Vote back?";
+	var invite = ". Listen to mine and vote back maybe?";
 
 	/*var votes = new Array("! you got my vote #", ". Here my vote #", ". You deserve this vote #", "! You totally get my vote number ", "! Just added my vote :-) Now you have ", ". Just voted for you, now you have ", ". VOTED #", ". HERE MY VOTE #"),
 	vote = votes[Math.floor( Math.random() * votes.length )];
