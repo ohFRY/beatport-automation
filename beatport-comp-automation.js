@@ -34,7 +34,7 @@
  * NOTE:  This is all procedural as hell because prototypes and any
  *          OOP techniques in Javascript are stupid and confusing.
  *
- * @author  Fry Falavel
+ * @author  ohFRY
  *
  * @version 0.1
  */
