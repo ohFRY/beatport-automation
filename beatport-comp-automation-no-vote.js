@@ -42,8 +42,8 @@
 (function () {
 
 	/* VARIABLES TO CHANGE */
-	var url_to_share = "http://btprt.dj/196XNJc";
-	var name_of_track = "Fedde Le Grand";
+	var url_to_share = "http://goo.gl/aXobj";
+	var name_of_track = "Nicky Romero";
 
 
 	/* DO NOT TOUCH BELOW (unless you're a geek) */
