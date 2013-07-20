@@ -42,7 +42,7 @@
 (function () {
 
 	/* VARIABLES TO CHANGE */
-	var url_to_share = "http://btprt.dj/12uOPOZ";
+	var url_to_share = "http://goo.gl/aXobj";
 	var name_of_track = "Nicky Romero";
 
 
