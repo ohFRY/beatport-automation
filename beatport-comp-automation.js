@@ -52,17 +52,17 @@
 
 	var artist = $(".span6").children(".padBox").children(".txtxx.txtWhite").children("a").text();
 
-	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this track ", "Great track ", "Nice track ", "Love the way to made this ", "Dope track ", "Cool track ", "Nice work ", "This is good "),
+	var greetings = new Array("Wow ", "This is awesome ", "That's dope ", "Love this track ", "Great track ", "I like it ","Nice track ", "Love it ", "Dope track ", "Cool track ", "Nice work ", "This is good "),
 	greeting = greetings[Math.floor( Math.random() * greetings.length )];
 
 	//var invites = new Array("! Have a listen to my "+name_of_track+" track if you have 1 minute, I would love to hear your feedback. If you think I did well, please vote back ","! Listen to my "+name_of_track+" track if you have the time, I'd like to read your feedback and maybe vote back? ", "! Would you mind gimme some feedback on my "+name_of_track+" track? and maybe vote back? Check it out here: ", ". Please have a listen to my "+name_of_track+" track. Feel free to vote back: ", "! What do you think of my "+name_of_track+" track? vote back? ", "!!! I would be grateful if you give me your feedback on mine (and I would love you if you vote), check it out here: "),
 	//invite = invites[Math.floor( Math.random() * invites.length )];
-	var invite = ". Listen to my "+name_of_track+" remix and maybe vote back?";
+	var invite = ". Vote back?";
 
-	/*var votes = new Array("! you got my vote #", ". Here my vote #", ". You deserve this vote #", "! You totally get my vote number ", "! Just added my vote :-) Now you have ", ". Just voted for you, now you have ", ". VOTED #", ". HERE MY VOTE #"),
-	vote = votes[Math.floor( Math.random() * votes.length )];
-	*/
-	var vote = ". VOTED #";
+	//var votes = new Array("! you got my vote #", ". Here my vote #", ". You deserve this vote #", "! You totally get my vote number ", "! Just added my vote :-) Now you have ", ". Just voted for you, now you have ", ". VOTED #", ". HERE MY VOTE #"),
+	//vote = votes[Math.floor( Math.random() * votes.length )];
+	
+	var vote = "VOTED #";
 
 	//var no_votes = new Array("! I will come back to vote for you when the vote will start", ". Definitely coming back in few days to make my vote for you", ". Hope you will win something with this", "! You deserve to win something with this, I'll come back to vote", "! I wish I could vote now, I'll come back to vote", ". I'll come back when the votes start to support you with my vote", ". For sure I will come back to vote for this", ". This Definitely catched my attention, I'll come back to vote for your track"),
 	//var no_vote = no_votes[Math.floor( Math.random() * no_votes.length )];
