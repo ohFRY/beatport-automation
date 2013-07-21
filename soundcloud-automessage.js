@@ -16,7 +16,7 @@
  * TERMS OF REPRODUCTION USE
  *
  * 1. Provide a link back to the original repository (this repository), as
- *      in, https://github.com/ohFRY/soundcloud-followers, that is well-visible
+ *      in, https://github.com/ohFRY, that is well-visible
  *      wherever the source is being reproduced.  For example, should you
  *      display it on a website, you should provide a link above/below that
  *      which the users use, titled something such as "ORIGINAL AUTHOR".
@@ -39,11 +39,9 @@
  * @version 0.1
  */
 
-(function () {
+(function (scenario) {
 
 	var myArtist = $(".entry-display").text().substring(1);
-	
-	var scenario = 1;
 
 	function getScenarios(scenario)
 	{
@@ -53,39 +51,39 @@
 		switch(scenario) {
             case (1):
             	// artist following me
-                myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. Which ones you ♥ the most? You can be even more specific by commenting them on the part you like the most.\n\r\n\rtake care\n\r\n\rAker";                
+                myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. Which ones you ♥ the most? You can be even more specific by commenting them on the part you like the most.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (2):
-                // artist following me and liking me
-				myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rtake care\n\r\n\rAker";                
+                // artist following me and liking
+				myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (3):
-                // artist liking me only
-                myMessage = "Thanks for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rFollow me to stay tuned\n\r\n\rtake care\n\r\n\rAker";
+                // artist liking only
+                myMessage = "Thanks for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rFollow Me if you want to stay tuned and not be the one that missed my next banger. I don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\n\rThank you again "+myArtist+"\n\r\n\rtake care\n\r\n\rAker";
                 break;
             case (4):
             	// dj following me
-                myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. Which ones you ♥ the most? You can be even more specific by commenting them on the part you like the most.\n\r\n\rtake care\n\r\n\rAker";                
+                myMessage = "Thanks for following me. I'm listening to your mixtape now, so good! Looking forward the next one already.\n\rMaybe you can play one of my track in your next one? Let me know if you do it, I'll share your mixtape.\n\r\n\rPlease tell me what you think about my tracks. Which ones you ♥ the most? You can be even more specific by commenting them on the part you like the most.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (5):
-                // dj following me and liking me
-				myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rtake care\n\r\n\rAker";                
+                // dj following me and liking
+				myMessage = "Thanks for following me and for your ♥ on my work. I'm listening to your mixtape now, really good!!! Looking forward the next one already.\n\rMaybe you can play one of my track in your next one? Let me know if you do it, I'll share your mixtape.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (6):
                 // dj liking me only
-                myMessage = "Thanks for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rFollow me to stay tuned\n\r\n\rtake care\n\r\n\rAker";
+                myMessage = "Thanks for your ♥ on my work. I'm listening to your mixtape now, really good!!! Looking forward the next one already.\n\rMaybe you can play one of my track in your next one? Let me know if you do it, I'll share your mixtape.\n\r\n\rPlease tell me what you think about my music. You can be specific by commenting on them and let me know what part you like.\n\r\n\rFollow Me if you want to stay tuned and not be the one that missed my next banger. I don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\n\rThank you again "+myArtist+"\n\r\n\rtake care\n\r\n\rAker";
                 break;
             case (7):
             	// normal user following me
-                myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. Which ones you ♥ the most? You can be even more specific by commenting them on the part you like the most.\n\r\n\rtake care\n\r\n\rAker";                
+                myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rIf you really like it, please share it with your friends and repost it. I'm no famous, so I need your help to bring the tracks you like to others. My music is all in Free download and I will keep it like this as much as I can. However the only thing to keep myself motivated is to hear from people if it is good or bad.\n\r\n\rPlease tell me what you think about my tracks. All my tracks have a lot of variations, so you can comment the part you prefer the best, like this I will know and I will create my next sound with this in mind.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (8):
                 // normal user following me and liking me
-				myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rtake care\n\r\n\rAker";                
+				myMessage = "Thanks for following me and also for your ♥ on my work.\n\r\n\rIf you really like it, please share it with your friends and repost it. I'm no famous, so I need your help to bring the tracks you like to others. My music is all in Free download and I will keep it like this as much as I can. However the only thing to keep myself motivated is to hear from people if it is good or bad.\n\r\n\rPlease tell me what you think about my tracks. All my tracks have a lot of variations, so you can comment the part you prefer the best, like this I will know and I will create my next sound with this in mind.\n\r\n\rtake care "+myArtist+"\n\r\n\rAker";                
                 break;
             case (9):
                 // normal user liking me only
-                myMessage = "Thanks for your ♥ on my work.\n\r\n\rI'm listening to your sounds now.\n\r\n\rPlease tell me what you think about my tracks. You can be specific by commenting on them and let me know what part you like.\n\r\n\rFollow me to stay tuned\n\r\n\rtake care\n\r\n\rAker";
+                myMessage = "Thanks for your ♥ on my work.\n\r\n\rIf you really like it, please share it with your friends and repost it. I'm no famous, so I need your help to bring the tracks you like to others. My music is all in Free download and I will keep it like this as much as I can. However the only thing to keep myself motivated is to hear from people if it is good or bad.\n\r\n\rPlease tell me what you think about my tracks. All my tracks have a lot of variations, so you can comment the part you prefer the best, like this I will know and I will create my next sound with this in mind.\n\r\n\rFollow Me if you want to stay tuned and not be the one that missed my next banger. I don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\n\rThank you again "+myArtist+"\n\r\n\rtake care\n\r\n\rAker";
                 
         }
         return myMessage;
@@ -95,7 +93,7 @@
 
 	var message = getScenarios(scenario);
 
-	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just wanted to thank you");}, 500); 
+	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just want to thank you");}, 500); 
 	setTimeout(function () { $("#message_body").val($("#message_body").text()+message);}, 500); 
 
 	//setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
