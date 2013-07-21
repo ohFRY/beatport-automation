@@ -41,6 +41,8 @@
 
 (function (scenario) {
 
+	
+
 	var myArtist = $(".entry-display").text().substring(1);
 
 	function getScenarios(scenario)
@@ -91,7 +93,7 @@
 
 
 
-	var message = getScenarios(scenario);
+	var message = scenario;
 
 	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just want to thank you");}, 500); 
 	setTimeout(function () { $("#message_body").val($("#message_body").text()+message);}, 500); 
