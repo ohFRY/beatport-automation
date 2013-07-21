@@ -45,6 +45,7 @@
 	var myName = $("#current-user-head").text();
 	var myMessage;
 
+	// Detects the scenario you want to apply, by reading the number in the message text field.
 	var scenario = parseInt($("#message_body").val());
 
 	switch(scenario) {
