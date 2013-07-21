@@ -45,7 +45,7 @@
 
 	var myMessage;
 
-	var scenario = $("#message_body").val();
+	var scenario = parseInt($("#message_body").val());
 
 	switch(scenario) {
         case (1):
