@@ -87,7 +87,7 @@
     }
 
 	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just want to thank you");}, 500); 
-	setTimeout(function () { $("#message_body").val($("#message_body").text()+myMessage);}, 500); 
+	setTimeout(function () { $("#message_body").val(myMessage);}, 500);
 
 	//setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
 
