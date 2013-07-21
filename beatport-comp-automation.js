@@ -16,7 +16,7 @@
  * TERMS OF REPRODUCTION USE
  *
  * 1. Provide a link back to the original repository (this repository), as
- *      in, https://github.com/ohFRY/soundcloud-followers, that is well-visible
+ *      in, https://github.com/ohFRY, that is well-visible
  *      wherever the source is being reproduced.  For example, should you
  *      display it on a website, you should provide a link above/below that
  *      which the users use, titled something such as "ORIGINAL AUTHOR".
