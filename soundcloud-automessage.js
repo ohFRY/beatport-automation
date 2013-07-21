@@ -39,11 +39,13 @@
  * @version 0.1
  */
 
-(function ScMsg(scenario) {
+(function () {
 
 	var myArtist = $(".entry-display").text().substring(1);
 
 	var myMessage;
+
+	var scenario = $("#message_body").text();
 
 	switch(scenario) {
         case (1):
@@ -84,10 +86,8 @@
             
     }
 
-	var message = myMessage;
-
 	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just want to thank you");}, 500); 
-	setTimeout(function () { $("#message_body").val($("#message_body").text()+message);}, 500); 
+	setTimeout(function () { $("#message_body").val($("#message_body").text()+myMessage);}, 500); 
 
 	//setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
 
