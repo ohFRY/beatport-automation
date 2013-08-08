@@ -89,7 +89,7 @@
             
     }
 
-    var mySubjects = new Array("Hey "+myArtist+"! I just want to thank you", "Hi "+myArtist+" :)", "Hello "+myArtist+" <3", "Thanks "+myArtist+"!"),
+    var mySubjects = new Array("Hey "+myArtist+"! I just want to thank you", "Hi "+myArtist+" :)", "Hello "+myArtist+" <3", "Thanks "+myArtist+"!");
     var mySubject = mySubjects[Math.floor( Math.random() * mySubjects.length )];
             
 
