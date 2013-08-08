@@ -43,7 +43,7 @@
 
 	var myArtist = $(".entry-display").text().substring(1).split(' ')[0];
 	var myName = $("#current-user-head").text();
-	var myMessage;
+	var myMessages, var myMessage;
 
 	// Detects the scenario you want to apply, by reading the number in the message text field.
 	var scenario = parseInt($("#message_body").val());
@@ -83,8 +83,8 @@
             break;
         case (9):
             // normal user liking me only
-            var myMessages = new Array("Thanks for your ♥ on my work.\n\r\nIf you really like it, please share it with your friends.\n\r\nPlease comment it to tell me what you specifically like.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next track.\n\r\nThank you again "+myArtist+".\n\r\nTake care.", "Just wanted to thank you for your ♥.\n\r\nIf you really like it, please share it with your friends and repost it.\n\rI'm no famous, so I need your help to bring the tracks you like to others.\n\r\nPlease tell me what you think about my tracks. \n\rAll my tracks have a lot of variations, so you can comment the part you prefer the best.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next banger. \n\rI don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\nThanks again "+myArtist+".\n\r\nTake care."),
-            var myMessage = myMessages[Math.floor( Math.random() * myMessages.length )] + "\n\r\n"+myName;
+            myMessages = new Array("Thanks for your ♥ on my work.\n\r\nIf you really like it, please share it with your friends.\n\r\nPlease comment it to tell me what you specifically like.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next track.\n\r\nThank you again "+myArtist+".\n\r\nTake care.", "Just wanted to thank you for your ♥.\n\r\nIf you really like it, please share it with your friends and repost it.\n\rI'm no famous, so I need your help to bring the tracks you like to others.\n\r\nPlease tell me what you think about my tracks. \n\rAll my tracks have a lot of variations, so you can comment the part you prefer the best.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next banger. \n\rI don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\nThanks again "+myArtist+".\n\r\nTake care.");
+            myMessage = myMessages[Math.floor( Math.random() * myMessages.length )] + "\n\r\n"+myName;
             
     }
 
