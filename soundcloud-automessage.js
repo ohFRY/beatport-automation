@@ -43,7 +43,8 @@
 
 	var myArtist = $(".entry-display").text().substring(1).split(' ')[0];
 	var myName = $("#current-user-head").text();
-	var myMessages, var myMessage;
+	var myMessages;
+    var myMessage;
 
 	// Detects the scenario you want to apply, by reading the number in the message text field.
 	var scenario = parseInt($("#message_body").val());
