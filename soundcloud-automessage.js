@@ -41,7 +41,7 @@
 
 (function () {
 
-	var myArtist = $(".entry-display").text().substring(1);
+	var myArtist = $(".entry-display").text().substring(1).split(' ')[0];
 	var myName = $("#current-user-head").text();
 	var myMessage;
 
@@ -83,11 +83,16 @@
             break;
         case (9):
             // normal user liking me only
-            myMessage = "Thanks for your ♥ on my work.\n\r\nIf you really like it, please share it with your friends and repost it. I'm no famous, so I need your help to bring the tracks you like to others. My music is all in Free download and I will keep it like this as much as I can. However the only thing to keep myself motivated is to hear from people if it is good or bad.\n\r\nPlease tell me what you think about my tracks. All my tracks have a lot of variations, so you can comment the part you prefer the best, like this I will know and I will create my next sound with your feedback in mind.\n\r\nFollow Me if you want to stay tuned and not be the one that missed my next banger. I don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\nThank you again "+myArtist+".\n\r\nTake care. Feel free to contact me for anything. I'll be glad to help you.\n\r\n"+myName+"";
+            var myMessages = new Array("Thanks for your ♥ on my work.\n\r\nIf you really like it, please share it with your friends.\n\r\nPlease comment it to tell me what you specifically like.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next track.\n\r\nThank you again "+myArtist+".\n\r\nTake care.", "Just wanted to thank you for your ♥.\n\r\nIf you really like it, please share it with your friends and repost it.\n\rI'm no famous, so I need your help to bring the tracks you like to others.\n\r\nPlease tell me what you think about my tracks. \n\rAll my tracks have a lot of variations, so you can comment the part you prefer the best.\n\r\nFollow me if you want to stay tuned and not be the one that missed my next banger. \n\rI don't repost music and I upload something once per month, so I promise your SoundCloud timeline won't be polluted by me. \n\r\nThanks again "+myArtist+".\n\r\nTake care."),
+            var myMessage = myMessages[Math.floor( Math.random() * myMessages.length )] + "\n\r\n"+myName;
             
     }
 
-	setTimeout(function () { $("#message_subject").val("Hey "+myArtist+"! I just want to thank you");}, 500); 
+    var mySubjects = new Array("Hey "+myArtist+"! I just want to thank you", "Hi "+myArtist+" :)", "Hello "+myArtist+" <3", "Thanks "+myArtist+"!"),
+    var mySubject = mySubjects[Math.floor( Math.random() * mySubjects.length )];
+            
+
+	setTimeout(function () { $("#message_subject").val(mySubject);}, 500); 
 	setTimeout(function () { $("#message_body").val(myMessage);}, 500);
 
 	//setTimeout(function () { $("#commentform").children(".btn").click(); }, 800);
